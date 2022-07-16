@@ -8,16 +8,13 @@ public class Shop {
         numberOfBearsCreated++;
 
         if(this.numberOfBearsCreated % 5 == 0){
-            Bear crankyBear = new CrankyBear();
-            return crankyBear;
+           return new CrankyBear();
         }
         else if(this.numberOfBearsCreated % 2 == 0){
-            Bear simpleBear = new SimpleBear();
-            return simpleBear;
+            return new SimpleBear();
         }
 
-        Bear drunkenBear = new DrunkenBear();
-        return drunkenBear;
+        return new DrunkenBear();
     }
 
     public int getNumberOfBearsCreated(){
